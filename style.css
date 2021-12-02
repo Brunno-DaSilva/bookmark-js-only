@@ -22,3 +22,75 @@ html {
   margin: 0;
   box-sizing: inherit;
 }
+
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+/* ======= MENU ======= */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+/* main-menu-style */
+.header-top-menu {
+  /* if-needed-to-position-over-other-div
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; */
+
+  width: 100vw;
+  margin: 0 auto;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: linear 0.3s;
+}
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.main-menu li {
+  position: relative;
+  background-color: var(--dark-blue);
+  width: 100%;
+  text-align: center;
+  transition: linear 0.3s;
+}
+.main-menu li a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+  transition: linear 0.3s;
+}
+/* hover-effects */
+.main-menu li:hover {
+  background-color: var(--OffWhite);
+}
+.main-menu li:hover a {
+  color: var(--light-green);
+}
+/* drop-down-menu-on-hover */
+.drop-down {
+  position: absolute;
+  width: 100%;
+  display: none;
+  transition: linear 0.3s;
+}
+.drop-down li:hover {
+  background-color: var(--OffWhite);
+}
+.main-menu li:hover .drop-down {
+  display: block;
+}
+
+/* ======= Body ======= */

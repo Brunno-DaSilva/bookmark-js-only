@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookmarks</title>
+    <title>📚 Bookmarks</title>
 
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="./style.css">
@@ -16,8 +16,54 @@
 
 <body>
     <header>
-        <h1>Bookmarks</h1>
+        <div class="header-top-menu">
+            <ul class="main-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Blog</a>
+                    <!--       drop-down-menu -->
+                    <ul class="drop-down">
+                        <li><a href="">drop 1</a></li>
+                        <li><a href="">drop 2</a></li>
+                    </ul>
+                    <!--       drop-down-menu-ends -->
+                </li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Services</a>
+                    <ul class="drop-down">
+                        <li><a href="">lorem</a></li>
+                        <li><a href="">ipsum</a></li>
+                        <li><a href="">doler</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </header>
+
+    <section>
+        <div class="bookmark__wrapper">
+            <div class="bookmark__title">
+                <h2>Quick Links</h2>
+            </div>
+            <div class="bookmark__container">
+
+                <form id="bookmark__form">
+                    <div class="bookmark__form-group">
+                        <label>Site Name</label>
+                        <input type="text" class="bookmark__form-control" id="siteName" placeholder="Website Name">
+                    </div>
+                    <div class="bookmark__form-group">
+                        <label>Site URL</label>
+                        <input type="text" class="bookmark__form-control" id="siteUrl" placeholder="Website URL">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="bookmark__results">
+                <div id="bookmark__result"></div>
+            </div>
+        </div>
+    </section>
+
 
     <script src="./app.js"></script>
 </body>
