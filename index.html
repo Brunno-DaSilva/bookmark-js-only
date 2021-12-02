@@ -39,7 +39,7 @@
         </div>
     </header>
 
-    <section>
+    <section class="bookmark">
         <div class="bookmark__wrapper">
             <div class="bookmark__title">
                 <h2>Quick Links</h2>
@@ -48,18 +48,21 @@
 
                 <form id="bookmark__form">
                     <div class="bookmark__form-group">
-                        <label>Site Name</label>
                         <input type="text" class="bookmark__form-control" id="siteName" placeholder="Website Name">
                     </div>
                     <div class="bookmark__form-group">
-                        <label>Site URL</label>
                         <input type="text" class="bookmark__form-control" id="siteUrl" placeholder="Website URL">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div>
+                        <button type="submit" class="bookmark__form-btn">Add</button>
+                    </div>
                 </form>
             </div>
             <div class="bookmark__results">
-                <div id="bookmark__result"></div>
+                <div id="bookmark__result">
+                    <div>Bruno WEBSITE </div>
+                    <div>WWW.BRUNO-DASILVA.COM </div>
+                </div>
             </div>
         </div>
     </section>
