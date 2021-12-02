@@ -165,3 +165,38 @@ a {
 
 .bookmark__form-group {
 }
+
+.bookmark__results {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding: 1.5rem 0;
+}
+#bookmark__results-list {
+  display: grid;
+  grid-template-columns: 4fr 4fr auto;
+}
+
+#bookmark__results-list .bookmark__results-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #bbbcbe;
+}
+
+#bookmark__results-list .bookmark__results-item a {
+  font-size: 1.5rem;
+  color: #626874;
+  transition: ease-in-out 0.4s;
+  margin: 0 0.25rem;
+}
+#bookmark__results-list .bookmark__results-item a:hover {
+  color: var(--yellow);
+}
+#bookmark__results-list .bookmark__results-item i {
+  color: var(--light-blue);
+  margin: 0 0.25rem;
+  font-size: 1.5rem;
+}

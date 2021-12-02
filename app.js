@@ -27,5 +27,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  function getBookmarks() {
+    const bookmarks = JSON.parse(localStorage.getItem("bookmarks"));
+    const bookmarkResults = document.getElementById("bookmark__results-list");
+
+    for (let i = 0; i < bookmarks.length; i++) {
+      const name = bookmarks[i].name;
+      const url = bookmarks[i].url;
+      bookmarkResults.innerHTML += `
+        <div class="bookmark__results-item">
+        <i class="fab fa-jedi-order"></i>
+            <a href="${url}">${name}</a>
+        </div>
+        `;
+    }
+
+    console.log(bookmarks);
+  }
+
+  getBookmarks();
+
   form.addEventListener("submit", saveBookmark);
 });
